@@ -1,0 +1,941 @@
+{
+  "synthetic": true,
+  "passed": 127,
+  "failed": 0,
+  "sourceOccurrences": 14,
+  "docxOccurrences": 6,
+  "uniqueOcrInputs": 8,
+  "ocrLineEvidenceCount": 74,
+  "quality": [
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "ocrLineCount": 6,
+      "characterEdits": 1,
+      "truthCharacters": 76,
+      "exactLineMatches": 5,
+      "criticalValues": {
+        "person": true,
+        "certificate": true,
+        "date": true,
+        "amount": false
+      },
+      "textAngle": 0,
+      "rawLines": [
+        "模 拟 样 本 非 真 实 证 书",
+        "项 目 名 称 ： 青 松 路 道 路 维 修",
+        "项 目 经 理 ： 张 明",
+        "证 书 编 号 ： AB0123456789",
+        "有 效 期 ： 2028 年 12 月 31 日",
+        "投 标 报 价 ： 1234567 · 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    },
+    {
+      "sourceName": "degraded.jpg",
+      "page": null,
+      "ocrLineCount": 6,
+      "characterEdits": 5,
+      "truthCharacters": 76,
+      "exactLineMatches": 2,
+      "criticalValues": {
+        "person": true,
+        "certificate": false,
+        "date": true,
+        "amount": true
+      },
+      "textAngle": 0,
+      "rawLines": [
+        "模 拟 样 本 非 貞 实 证 书",
+        "项 目 名 称 ， 青 松 路 道 路 维 修",
+        "项 目 经 理 ： 张 明",
+        "证 书 编 号 ， AB012345 789",
+        "有 效 期 2028 年 12 月 31 日",
+        "投 标 报 价 ： 1234567 ． 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "ocrLineCount": 6,
+      "characterEdits": 1,
+      "truthCharacters": 76,
+      "exactLineMatches": 5,
+      "criticalValues": {
+        "person": true,
+        "certificate": true,
+        "date": true,
+        "amount": false
+      },
+      "textAngle": -5.300000000000035,
+      "rawLines": [
+        "模 拟 样 本 非 真 实 证 书",
+        "项 目 名 称 ： 青 松 路 道 路 维 修",
+        "项 目 经 理 ： 张 明",
+        "证 书 编 号 ： AB0123456789",
+        "有 效 期 ： 2028 年 1 2 月 31 日",
+        "投 标 报 价 ： 1234567 · 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    },
+    {
+      "sourceName": "unreadable.png",
+      "page": null,
+      "ocrLineCount": 0,
+      "characterEdits": 76,
+      "truthCharacters": 76,
+      "exactLineMatches": 0,
+      "criticalValues": {
+        "person": false,
+        "certificate": false,
+        "date": false,
+        "amount": false
+      },
+      "textAngle": null,
+      "rawLines": [],
+      "status": "no_text_detected_not_proof_of_blank"
+    },
+    {
+      "sourceName": "blank.png",
+      "page": null,
+      "ocrLineCount": 0,
+      "characterEdits": 0,
+      "truthCharacters": 0,
+      "exactLineMatches": 0,
+      "criticalValues": {
+        "person": false,
+        "certificate": false,
+        "date": false,
+        "amount": false
+      },
+      "textAngle": null,
+      "rawLines": [],
+      "status": "no_text_detected_not_proof_of_blank"
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "ocrLineCount": 7,
+      "characterEdits": 4,
+      "truthCharacters": 76,
+      "exactLineMatches": 3,
+      "criticalValues": {
+        "person": true,
+        "certificate": false,
+        "date": true,
+        "amount": true
+      },
+      "textAngle": 0,
+      "rawLines": [
+        "模 拟 样 本 非 真 实 证 书",
+        "项 目 名 称 ． 青 松 路 道 路 维 修",
+        "项 目 经 理 ： 张 明",
+        "证 书 编 号 ： ABOI 23456789",
+        "有 效 期 ： 2028 年 12 月 31 日",
+        "投 标 报 价 ·",
+        "1234567 ． 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 2,
+      "ocrLineCount": 6,
+      "characterEdits": 11,
+      "truthCharacters": 76,
+      "exactLineMatches": 1,
+      "criticalValues": {
+        "person": true,
+        "certificate": false,
+        "date": true,
+        "amount": false
+      },
+      "textAngle": 0,
+      "rawLines": [
+        "模 拟 样 本 非 真 实 证 书",
+        "项 目 名 称 ， 胄 松 路 道 路 堆 修",
+        "项 目 经 理 ， 张 明",
+        "证 书 编 号 ． A 12345 789",
+        "有 效 期 2028 年 12 月 31 日",
+        "投 标 报 价 ： 12 567 ． 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "ocrLineCount": 7,
+      "characterEdits": 4,
+      "truthCharacters": 76,
+      "exactLineMatches": 3,
+      "criticalValues": {
+        "person": true,
+        "certificate": false,
+        "date": true,
+        "amount": true
+      },
+      "textAngle": 0,
+      "rawLines": [
+        "模 拟 样 本 非 真 实 证 书",
+        "项 目 名 称 ： 青 松 路 道 路 维 修",
+        "项 目 经 理 ： 张 明",
+        "证 书 编 号 ： ABOI 23456789",
+        "有 效 期 ． 2028 年 12 月 31 日",
+        "投 标 报 价 ·",
+        "1234567 ． 89 元"
+      ],
+      "status": "text_detected_requires_review"
+    }
+  ],
+  "geometry": [
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 1,
+      "iou": 0.9928057553956835,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 2,
+      "iou": 0.9985632183908046,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 3,
+      "iou": 0.9901477832512315,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 4,
+      "iou": 0.9943422913719944,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 5,
+      "iou": 0.9867256637168141,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "clean.png",
+      "page": null,
+      "line": 6,
+      "iou": 0.9970059880239521,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 1,
+      "iou": 0.9791394387297905,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 2,
+      "iou": 0.9944195147717401,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 3,
+      "iou": 0.9576789495534893,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 4,
+      "iou": 0.9563672896261773,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 5,
+      "iou": 0.9360377521248537,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "skew.png",
+      "page": null,
+      "line": 6,
+      "iou": 0.9674405962150644,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 1,
+      "iou": 0.9585932682119094,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 2,
+      "iou": 0.9796943136465948,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 3,
+      "iou": 0.9725812020042729,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 4,
+      "iou": 0.9489530579647724,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 5,
+      "iou": 0.9714865227303199,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 1,
+      "line": 6,
+      "iou": 0.9509798550904307,
+      "ocrLineParts": 2
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 1,
+      "iou": 0.9585932682119082,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 2,
+      "iou": 0.9796943136465917,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 3,
+      "iou": 0.97258120200427,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 4,
+      "iou": 0.9489530579647724,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 5,
+      "iou": 0.9495905579683723,
+      "ocrLineParts": 1
+    },
+    {
+      "sourceName": "scans.pdf",
+      "page": 3,
+      "line": 6,
+      "iou": 0.98530688886281,
+      "ocrLineParts": 2
+    }
+  ],
+  "minimumAuthoredRegionIoU": 0.9360377521248537,
+  "checks": [
+    {
+      "name": "No hidden PDF text used as OCR",
+      "passed": true
+    },
+    {
+      "name": "Word image occurrence inventory",
+      "passed": true
+    },
+    {
+      "name": "One media reused in separate body/header locations stays separate",
+      "passed": true
+    },
+    {
+      "name": "Cropping and rotation never presented as verified page display",
+      "passed": true
+    },
+    {
+      "name": "OCR is local and provides no invented confidence",
+      "passed": true
+    },
+    {
+      "name": "Duplicate media does not require duplicate recognition",
+      "passed": true
+    },
+    {
+      "name": "Blank and unreadable images both remain undetermined",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 512ce26864aab483131fb506",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: e45ea775bfe102dce35f2dc6",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 83ee0ba6cfa0c5321f3b5945",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 8b92edf9cc19bd05bc2c5e78",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 593b045ad0f96fb3076980d2",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: e1f1854a51a7657261f7b593",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 3cd292e79a08947790c13f7e",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 4e6a9b8c265e95eca0e1617a",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: c4024623f0d188a6ac636b42",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 7717771b580bbbc265e20aaf",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 17ec4613ae5cce1356d92f11",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 91a674ed370c2c9c2d6112c5",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ffa9a080dc7892a96c02c785",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 8dcdae7380400b6321869ce7",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ae10a33e6364e3e47de584fc",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: aa2eb359e7924efad839c943",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 673c269b177828e4ab91e2fb",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: c192c7fa98303c18be275792",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: b947549efac88dafd793cbba",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: e4f1d315ba85bb56c3ab4072",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 754bbf15139bea4a45d0427f",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ec9890eb0e065635d9a1e172",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ed8eecdf939da20c68251195",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: f5a193f682ef22036afcf2e5",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: fcc9a22476db68fe6f6d1244",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 905f098950a530d5f5f2a091",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 99888fa4403e118b624127a9",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 7d69355cc177b28c491c41e0",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 0ee96808888c5115eec08e76",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 316988d763ca2a77388f4d3d",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 93ba5c81f10a54c5cde2ca13",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: cdd39d58930e3edfc34d9164",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 699e5cdfd1d63c7283202aa4",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: fa83988c513448bebcedea5f",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 966ca513b3d62bbf9d1c4e87",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 02f2156ffe01cda1c618bf70",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 60419b08d3af970f800c0844",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: dedc76de70e1671096ee078e",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 70e7e01534a48f27a824920e",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 384355be98fc1cf518398291",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: cda7a56f9193b0048cee0094",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 97ecb0bea324becd9d921d76",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 92d826087e22106191025247",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: a685c42a2616ec312a5d1cd0",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 067f60532dc86387ef4a27a3",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 17bf380bee561e8760955635",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 6fe61a8938bc68bb8120a178",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 5faab3f6c9f7288e1207e511",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 57e09d64470fef3815d4a6b2",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 8a9bf52a2819655cadac8b9f",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: cc4a743b622e8e82cc52e1e0",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 84b1c9564ffce6942a907c4e",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 88de532e03a9410903ad0010",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: e216b579f04ec1a9c7f7f2c8",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: bae082c2d2f8040416115470",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 5767c622e7224748c38a5e0c",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: fb02efbbcf67bbcd9cb593da",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: b8c58a21062fb4143749a283",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: c6c451405e825ed330902b72",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 2fc780c3b41f5ed3e7722291",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 829b2a2ac087267463fee837",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: add2d71cab53aa4d9730b8a9",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 3dd3e91a46ce64a473acb072",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ef47b92f3317f13ab0d73ae8",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: fc67fd8ffa4fe9ed15954af9",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 12fb60a42c552e3de0e54ca3",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: ef3606591c6c428b402e9717",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: e7220c1106f36d5a0a71b8c8",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 104306e4ed29e77fe9f919e6",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 2f388f2e45d5b66801744d8b",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 162b178cf2852a3f4ad94060",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 6dc6ebccb9de7c557cd219cd",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 967456611a6fe6ddd7746f7f",
+      "passed": true
+    },
+    {
+      "name": "Original source and region: 51e7f0e3658a350f264a17f2",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: 032af10b5448cdbd04b62060",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: 1070eeee747b611756a13011",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: 015da6b5042233d2396a6b94",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: 18127bd65230efce28f0498c",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: b7fe013776252862090c04cd",
+      "passed": true
+    },
+    {
+      "name": "Independent Word image locator: 1ab3ffa96430369d32c9a7ba",
+      "passed": true
+    },
+    {
+      "name": "PDF page 1: raster matches cropped/rotated page dimensions",
+      "passed": true
+    },
+    {
+      "name": "PDF page 2: raster matches cropped/rotated page dimensions",
+      "passed": true
+    },
+    {
+      "name": "PDF page 3: raster matches cropped/rotated page dimensions",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:0",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:1",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:2",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:3",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:4",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap clean.png:0:5",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:0",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:1",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:2",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:3",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:4",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap skew.png:0:5",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:0",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:1",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:2",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:3",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:4",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:1:5",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:0",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:1",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:2",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:3",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:4",
+      "passed": true
+    },
+    {
+      "name": "Authored region overlap scans.pdf:3:5",
+      "passed": true
+    },
+    {
+      "name": "Reject fabricated OCR text",
+      "passed": true
+    },
+    {
+      "name": "Reject fabricated region",
+      "passed": true
+    },
+    {
+      "name": "Reject wrong OCR result",
+      "passed": true
+    },
+    {
+      "name": "Reject wrong source image",
+      "passed": true
+    },
+    {
+      "name": "Reject wrong PDF page",
+      "passed": true
+    },
+    {
+      "name": "Reject wrong Word image occurrence",
+      "passed": true
+    },
+    {
+      "name": "Returned evidence cannot mutate original index",
+      "passed": true
+    },
+    {
+      "name": "Reject a different original file version",
+      "passed": true
+    },
+    {
+      "name": "Reject external image relationship",
+      "passed": true
+    },
+    {
+      "name": "Reject missing image relationship",
+      "passed": true
+    },
+    {
+      "name": "Existing parser comparison recorded both file outcomes",
+      "passed": true
+    },
+    {
+      "name": "OCR input files unchanged after recognition",
+      "passed": true
+    },
+    {
+      "name": "Every original source unchanged including empty OCR inputs",
+      "passed": true
+    }
+  ],
+  "engine": "Windows.Media.Ocr",
+  "language": "zh-Hans-CN",
+  "confidenceAvailable": false,
+  "businessIntegrated": false,
+  "paidModelCalls": false,
+  "realCustomerFilesVerified": false,
+  "wordPageLocationsVerified": false,
+  "manualUprightPdfPages": [
+    3
+  ],
+  "sourceHashes": {
+    "clean.png": "5482a03099ee071a5dfb6ee937a71ae23e4a8dcd9a88bb06c9d89ddc84b9904c",
+    "degraded.jpg": "a0bffa1e346465291195d56a2d93bc99c827015444116fdfaa2adf9403aa8fbf",
+    "skew.png": "5f4bead23dede6d4d9f6d1a6b70fc6e2ff8f0f0a7f8e349fa3e8d103694cb5a0",
+    "unreadable.png": "664ce7e1410a0624d75e35dc53e1faec6f81b622349115c45144199e10191065",
+    "blank.png": "2a937789ec9cd0532dbcc08d23f6346dabf0ef44542991d2fd9d892c65e2c85e",
+    "images.docx": "a28e86d66b3e60399365bc45b4fc5dfd9fed8d8ef56958baf5492f2ff0716a73",
+    "scans.pdf": "7c6d56e6e2cebbc9657238ceadfc8a0636ea8e7239404b3cead8722f9fabad28"
+  },
+  "currentParser": [
+    {
+      "sourceName": "images.docx",
+      "ok": true,
+      "chars": 143,
+      "error": null,
+      "ocrProjectFound": false,
+      "ocrPersonFound": false,
+      "imageEvidenceReturned": false
+    },
+    {
+      "sourceName": "scans.pdf",
+      "ok": false,
+      "chars": null,
+      "error": "PDF 未检测到可选中文字层",
+      "ocrProjectFound": false,
+      "ocrPersonFound": false,
+      "imageEvidenceReturned": false
+    }
+  ],
+  "visualReview": {
+    "scanPagesInspected": [
+      1,
+      2,
+      3
+    ],
+    "skewOverlayInspected": true,
+    "wordLayoutRendered": false,
+    "realCustomerFiles": false
+  },
+  "wordRenderAttempt": {
+    "success": false,
+    "error": "LibreOffice soffice.exe was not found on PATH",
+    "installedSoftware": false
+  },
+  "qualityMetric": "NFKC plus whitespace removal only; punctuation substitutions remain errors; exactLineMatches means each authored line appears in concatenated OCR text",
+  "regression": {
+    "body": {
+      "passed": 160,
+      "failed": 0
+    },
+    "headerFooter": {
+      "passed": 154,
+      "failed": 0
+    },
+    "textboxes": {
+      "passed": 114,
+      "failed": 0
+    }
+  }
+}

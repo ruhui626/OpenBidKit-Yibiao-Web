@@ -1,5 +1,7 @@
 # Web 架构
 
+本系统提供标书编制、检查和共享资料管理。当前按单企业共享资料、多用户项目归属设计，不能等同于跨企业多租户隔离。拟新增的“修改复核”仍处于开发准备阶段，见 [开发准备](DEVELOPMENT-PREPARATION.md)。
+
 ## 1. 组件
 
 - `client/`：React 19 + Vite 7，只负责 UI、请求编排和 SSE 展示。
@@ -16,7 +18,7 @@ Browser
   └─ /api + SSE    → Nginx → Fastify → Prisma → PostgreSQL
 ```
 
-客户端不保存 API Key，不解析或导出权威文档。所有跨网络参数均由服务端重新校验。
+浏览器不承担权威文档解析或导出，鉴权和项目访问由服务端校验。模型配置区分普通用户脱敏视图和管理员完整视图；管理员浏览器也属于密钥暴露面，见 [配置与秘密边界](VARIABLES.md)。
 
 ## 3. 鉴权与权限
 
@@ -27,7 +29,7 @@ Browser
 - 默认开放模块为仪表盘、标书生成和设置；用户管理与提示词管理仅管理员可用。
 - 用户管理与提示词写操作仅管理员可用。
 - 项目作用域 API 使用 `X-Project-Id`，服务端校验项目归属。
-- 权限在服务端每次请求时生效，前端通过 `/api/me` 定时刷新菜单。
+- 普通用户的模块门禁逐请求查询数据库，前端通过 `/api/me` 定时刷新菜单。管理员角色来自 JWT；角色或账户状态变化对既有令牌的即时影响需要另行验证。
 
 ## 4. 模块边界
 
@@ -65,7 +67,7 @@ Browser
 
 ## 8. AI 与通用模型互通
 
-AI 配置与真实密钥只存在服务端，浏览器端不保存 API Key。文本模型、生图模型和 Agent 运行时通过服务端配置读取服务商、模型名称、Base URL 和密钥，再由后端或本地 AI Proxy 发起调用。
+AI 配置和密钥持久化在服务端数据库。普通用户读取配置时密钥被脱敏，管理员配置接口当前返回完整配置。文本模型、生图模型和 Agent 运行时通过服务端配置读取服务商、模型名称、Base URL 和密钥，再由后端或本地 AI Proxy 发起调用。
 
 部署方可以按安全策略选择三种互通方式：
 
@@ -77,7 +79,7 @@ AI 配置与真实密钥只存在服务端，浏览器端不保存 API Key。文
 
 ## 9. Web 运行边界
 
-Web 版以浏览器、HTTP API、SSE 进度推送、PostgreSQL 和服务端运行数据目录为边界。前端所有业务能力都应通过 `/api` 调用服务端，不直接读写数据库、文件系统或模型密钥。
+Web 版以浏览器、HTTP API、SSE 进度推送、PostgreSQL 和服务端运行数据目录为边界。前端业务通过 `/api` 调用服务端，不直接读写数据库和服务端文件系统。模型密钥的管理员读取边界见 [配置与秘密边界](VARIABLES.md)。
 
 运行时数据边界：
 
@@ -85,3 +87,36 @@ Web 版以浏览器、HTTP API、SSE 进度推送、PostgreSQL 和服务端运�
 - 上传文件、导出结果、文档解析中间文件保存到服务端运行数据目录；
 - `.env`、数据库备份、上传目录、日志和客户文件由部署环境管理，不进入源码仓库；
 - Nginx 只暴露前端静态资源、`/api` 和必要的 SSE 路由，数据库与后端内部端口不应直接暴露到公网。
+
+## 10. 已知边界与开发准备
+
+- 当前文档解析返回 Markdown 及其哈希，不返回原始 DOCX 字节摘要和稳定结构位置；图片被剥离。新增修改复核需单独建立版本、结构块及覆盖范围，见 server/src/document/parser.ts。
+- 知识库、公司和人员资质使用 shared 目录，当前项目归属不是跨公司隔离，见 server/src/document/paths.ts。
+- 既有任务接口与 SSE 按项目授权，不统一叠加 bid-check 模块权限；新增复核的详情、任务、下载和事件必须明确门禁，见 server/src/index.ts、routes/tasks.ts、routes/events.ts。
+- Pi 运行时有 read/bash/edit/write 等工具；任务工作目录不等于操作系统沙箱。修改复核首版拟采用无工具的结构化模型请求，见 server/src/agent/pi/piSessionFactory.ts。
+- Mermaid 远程渲染会发送图表内容，AI 诊断失败响应也可能含业务信息；密钥脱敏不是标书正文脱敏，见 server/src/export/mermaid.ts、server/src/ai-diagnostics/storage.ts。
+- 本次类型基线为前端 14 项、后端 72 项错误；现有六个登录/诊断测试文件共 24 项通过，不能替代真实文件和模型验收。
+
+## 11. 相关文档
+
+以下文件沿用仓库现有 docs 目录；新增修改复核设计均标为草案，尚无业务实现。
+
+- [功能清单](FEATURES.md)
+- [部署说明](DEPLOYMENT.md)
+- [修改复核开发准备](DEVELOPMENT-PREPARATION.md)
+- [Word 提取与原文件定位验证](WORD-EVIDENCE-VALIDATION.md)
+- [页眉页脚提取与证据定位验证](HEADER-FOOTER-EVIDENCE-VALIDATION.md)
+- [文本框提取与证据定位验证](TEXTBOX-EVIDENCE-VALIDATION.md)
+- [图片和扫描件 OCR 与证据定位验证](IMAGE-OCR-EVIDENCE-VALIDATION.md)
+- [修改前后版本与逐条意见复核验证](REVISION-REVIEW-VALIDATION.md)
+- [权限与关键流程](FLOWS.md)
+- [权限矩阵](PERMISSIONS.md)
+- [配置与秘密边界](VARIABLES.md)
+- [测试覆盖与缺口](TEST-COVERAGE.md)
+- [任务及模型自动化](AUTOMATION.md)
+- [后台作业](BACKGROUND-JOBS.md)
+- [开发基线](preparation/baseline.json)
+- [虚构验收样例](preparation/sample-cases.json)
+- [拟定数据契约示例](preparation/revision-review-contract.json)
+
+修改复核首版未设计邮件通知或公开索引页面，因此本准备包不新增邮件及 SEO 文档。后台任务和模型工具已分别记录，不能按“无自动化”省略。

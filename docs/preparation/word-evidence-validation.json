@@ -1,0 +1,321 @@
+{
+  "synthetic": true,
+  "fixtures": [
+    "before.docx",
+    "after.docx",
+    "edges.docx"
+  ],
+  "passed": 160,
+  "failed": 0,
+  "blockCounts": {
+    "before.docx": 30,
+    "after.docx": 31,
+    "edges.docx": 12
+  },
+  "originalLocatorRoundTrips": 73,
+  "evidenceExamples": [
+    {
+      "sourceName": "before.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "e7890fceeeada2d99c2b7b1df02afe21b1f19fd6d7a7b181d8e165edab1fbe7c",
+        "blockId": "fba9190dc88db8965d410a11",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[7]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [],
+      "headingPath": [
+        "一 项目概况"
+      ]
+    },
+    {
+      "sourceName": "before.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "e7890fceeeada2d99c2b7b1df02afe21b1f19fd6d7a7b181d8e165edab1fbe7c",
+        "blockId": "d14d7078343cb1d0c10fe7ef",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[3]/w:tc[3]/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [
+        {
+          "tableIndex": 1,
+          "xmlRow": 3,
+          "physicalCell": 3,
+          "gridColumn": 3,
+          "gridSpan": 1,
+          "verticalMerge": null
+        },
+        {
+          "tableIndex": 2,
+          "xmlRow": 2,
+          "physicalCell": 2,
+          "gridColumn": 2,
+          "gridSpan": 1,
+          "verticalMerge": null
+        }
+      ],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    },
+    {
+      "sourceName": "before.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "e7890fceeeada2d99c2b7b1df02afe21b1f19fd6d7a7b181d8e165edab1fbe7c",
+        "blockId": "8f2d19787221e8800922e309",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[9]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    },
+    {
+      "sourceName": "before.docx",
+      "label": "人员表里的未改姓名",
+      "evidence": {
+        "sourceByteHash": "e7890fceeeada2d99c2b7b1df02afe21b1f19fd6d7a7b181d8e165edab1fbe7c",
+        "blockId": "c588ab09fce2a07c5e27ed51",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "示例甲",
+        "start": 0,
+        "end": 3,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [
+        {
+          "tableIndex": 1,
+          "xmlRow": 2,
+          "physicalCell": 2,
+          "gridColumn": 2,
+          "gridSpan": 1,
+          "verticalMerge": null
+        }
+      ],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    },
+    {
+      "sourceName": "after.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "f9e428bdda273f9d037ae06309a4f5a9c256218dc12a6d78ec6880445faa0d08",
+        "blockId": "2eb7ac3f886327a74b0eb7c6",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[8]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [],
+      "headingPath": [
+        "一 项目概况"
+      ]
+    },
+    {
+      "sourceName": "after.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "f9e428bdda273f9d037ae06309a4f5a9c256218dc12a6d78ec6880445faa0d08",
+        "blockId": "c279202d723a10126c191f25",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[3]/w:tc[3]/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [
+        {
+          "tableIndex": 1,
+          "xmlRow": 3,
+          "physicalCell": 3,
+          "gridColumn": 3,
+          "gridSpan": 1,
+          "verticalMerge": null
+        },
+        {
+          "tableIndex": 2,
+          "xmlRow": 2,
+          "physicalCell": 2,
+          "gridColumn": 2,
+          "gridSpan": 1,
+          "verticalMerge": null
+        }
+      ],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    },
+    {
+      "sourceName": "after.docx",
+      "label": "重复文字的不同位置",
+      "evidence": {
+        "sourceByteHash": "f9e428bdda273f9d037ae06309a4f5a9c256218dc12a6d78ec6880445faa0d08",
+        "blockId": "48615d430bd1cab9f0de133c",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[10]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "复核备注：待核对。",
+        "start": 0,
+        "end": 9,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    },
+    {
+      "sourceName": "after.docx",
+      "label": "人员表里的未改姓名",
+      "evidence": {
+        "sourceByteHash": "f9e428bdda273f9d037ae06309a4f5a9c256218dc12a6d78ec6880445faa0d08",
+        "blockId": "f023c5de90ced17bea525239",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "示例甲",
+        "start": 0,
+        "end": 3,
+        "offsetUnit": "unicode-code-point"
+      },
+      "tablePath": [
+        {
+          "tableIndex": 1,
+          "xmlRow": 2,
+          "physicalCell": 2,
+          "gridColumn": 2,
+          "gridSpan": 1,
+          "verticalMerge": null
+        }
+      ],
+      "headingPath": [
+        "二 人员与组织"
+      ]
+    }
+  ],
+  "currentParser": [
+    {
+      "sourceName": "before.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "chars": 686,
+      "hasOriginalLocators": false,
+      "headerTextFound": false,
+      "managerTextFound": true,
+      "nestedTableTextFound": true,
+      "textboxTextFound": false,
+      "footnoteTextFound": false,
+      "cachedDateFound": false,
+      "hiddenTextFound": false
+    },
+    {
+      "sourceName": "after.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "chars": 706,
+      "hasOriginalLocators": false,
+      "headerTextFound": false,
+      "managerTextFound": true,
+      "nestedTableTextFound": true,
+      "textboxTextFound": false,
+      "footnoteTextFound": false,
+      "cachedDateFound": false,
+      "hiddenTextFound": false
+    },
+    {
+      "sourceName": "edges.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "chars": 218,
+      "hasOriginalLocators": false,
+      "headerTextFound": false,
+      "managerTextFound": false,
+      "nestedTableTextFound": false,
+      "textboxTextFound": true,
+      "footnoteTextFound": true,
+      "cachedDateFound": false,
+      "hiddenTextFound": true
+    }
+  ],
+  "currentParserProcessExit": 0,
+  "pageOrWpsNavigationVerified": false,
+  "rendererVerified": false,
+  "customerAccuracyVerified": false,
+  "snapshotDate": "2026-10-24",
+  "rendererFailure": "LibreOffice soffice.exe was not found on PATH; no page images produced.",
+  "previewBrowserVerified": false,
+  "previewBrowserFailure": "In-app browser disallows file URLs; no alternate route was attempted.",
+  "sourceHashes": {
+    "before.docx": "e7890fceeeada2d99c2b7b1df02afe21b1f19fd6d7a7b181d8e165edab1fbe7c",
+    "after.docx": "f9e428bdda273f9d037ae06309a4f5a9c256218dc12a6d78ec6880445faa0d08",
+    "edges.docx": "07a69d4cf15e6bf64a3929627f344d832db4aadf4259098c5aa8f282b114feb9"
+  },
+  "independentXmlLookup": "Python standard-library ElementTree resolves the generated paths against original ZIP bytes; authored text/table expectations are checked separately.",
+  "businessIntegration": false,
+  "paidModelCalls": false,
+  "notes": [
+    "Only synthetic python-docx fixtures; no original customer documents.",
+    "160 is an assertion count, not an accuracy estimate on that many documents.",
+    "A valid location does not establish that the cited paragraph semantically satisfies the modification request."
+  ]
+}

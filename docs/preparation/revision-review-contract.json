@@ -1,0 +1,182 @@
+{
+  "artifactKind": "proposed-contract-example",
+  "proposed": true,
+  "mode": "demo",
+  "simulatedResults": true,
+  "containsActualDocxFiles": false,
+  "notice": "展示拟定的数据关系和状态；不是现有接口响应。byteHash 为占位值，不能用于真实文件核验。",
+  "review": {
+    "id": "demo-review",
+    "projectId": 1001,
+    "inputVersion": 1,
+    "issueCollectionComplete": true,
+    "issues": [
+      {
+        "id": "demo-issue-1",
+        "text": "把本文两处项目经理示例甲改为示例乙。",
+        "source": "演示文字意见"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "demo-before",
+      "reviewId": "demo-review",
+      "role": "before",
+      "originalName": "演示修改前.docx",
+      "byteHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "parserVersion": "design-v0",
+      "coverage": {
+        "body": "supported",
+        "tables": "not_in_example",
+        "headers": "not_supported",
+        "images": "not_supported"
+      },
+      "blocks": [
+        {
+          "id": "before-p1",
+          "part": "word/document.xml",
+          "kind": "paragraph",
+          "ordinal": 1,
+          "text": "项目经理：示例甲。",
+          "headingPath": [
+            "项目管理"
+          ]
+        },
+        {
+          "id": "before-p2",
+          "part": "word/document.xml",
+          "kind": "paragraph",
+          "ordinal": 2,
+          "text": "项目经理示例甲负责施工管理。",
+          "headingPath": [
+            "项目管理"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-after",
+      "reviewId": "demo-review",
+      "role": "after",
+      "originalName": "演示修改后.docx",
+      "byteHash": "1111111111111111111111111111111111111111111111111111111111111111",
+      "parserVersion": "design-v0",
+      "coverage": {
+        "body": "supported",
+        "tables": "not_in_example",
+        "headers": "not_supported",
+        "images": "not_supported"
+      },
+      "blocks": [
+        {
+          "id": "after-p1",
+          "part": "word/document.xml",
+          "kind": "paragraph",
+          "ordinal": 1,
+          "text": "项目经理：示例乙。",
+          "headingPath": [
+            "项目管理"
+          ]
+        },
+        {
+          "id": "after-p2",
+          "part": "word/document.xml",
+          "kind": "paragraph",
+          "ordinal": 2,
+          "text": "项目经理示例甲负责施工管理。",
+          "headingPath": [
+            "项目管理"
+          ]
+        }
+      ]
+    }
+  ],
+  "run": {
+    "id": "demo-run",
+    "reviewId": "demo-review",
+    "inputVersion": 1,
+    "inputSignature": "2222222222222222222222222222222222222222222222222222222222222222",
+    "status": "completed",
+    "isCurrent": true,
+    "pipelineVersion": "design-v0",
+    "promptVersion": "design-v0",
+    "model": {
+      "provider": null,
+      "name": null
+    },
+    "inputSnapshot": {
+      "beforeDocumentId": "demo-before",
+      "afterDocumentId": "demo-after",
+      "issueIds": [
+        "demo-issue-1"
+      ],
+      "issueCollectionComplete": true
+    },
+    "results": [
+      {
+        "issueId": "demo-issue-1",
+        "status": "partially_modified",
+        "reason": "已改正第一处，第二处仍为示例甲。",
+        "evidence": [
+          {
+            "documentId": "demo-before",
+            "blockId": "before-p1",
+            "quote": "项目经理：示例甲。"
+          },
+          {
+            "documentId": "demo-after",
+            "blockId": "after-p1",
+            "quote": "项目经理：示例乙。"
+          },
+          {
+            "documentId": "demo-after",
+            "blockId": "after-p2",
+            "quote": "项目经理示例甲负责施工管理。"
+          }
+        ],
+        "validation": {
+          "referencesValid": true,
+          "scope": "本示例正文中的两处；不代表对页眉、图片或完整Word的检查"
+        }
+      }
+    ]
+  },
+  "confirmations": [
+    {
+      "runId": "demo-run",
+      "issueId": "demo-issue-1",
+      "actorId": 1001,
+      "decision": "needs_follow_up",
+      "note": "演示人工意见：第二处还需修改。",
+      "createdAt": "2026-10-24T00:00:00.000Z"
+    }
+  ],
+  "proposedEnums": {
+    "machineStatus": [
+      "modified",
+      "unmodified",
+      "partially_modified",
+      "undetermined"
+    ],
+    "manualDecision": [
+      "confirmed",
+      "disputed",
+      "needs_follow_up"
+    ],
+    "runStatus": [
+      "queued",
+      "running",
+      "completed",
+      "failed",
+      "cancelled"
+    ]
+  },
+  "invariants": [
+    "证据必须属于输入快照中的文件。",
+    "历史输入变化后isCurrent为false，旧结果保留而不覆盖。",
+    "completed表示本次分析结束，不表示所有问题已修改。",
+    "人工确认不覆盖机器原始结论。",
+    "demo状态和真实模型运行必须可区分。"
+  ]
+}

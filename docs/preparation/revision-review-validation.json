@@ -1,0 +1,1033 @@
+{
+  "synthetic": true,
+  "pairs": 4,
+  "opinions": 24,
+  "passed": 144,
+  "failed": 0,
+  "decisionCounts": {
+    "modified": 8,
+    "partially_modified": 5,
+    "unmodified": 3,
+    "undetermined": 8
+  },
+  "exactHumanTruthAgreement": 20,
+  "conservativeAbstentionsOnKnownTruth": 4,
+  "falseModifiedCount": 0,
+  "textEvidenceRoundTrips": 73,
+  "confusionMatrix": [
+    {
+      "human": "modified",
+      "actual": "modified",
+      "count": 8
+    },
+    {
+      "human": "partially_modified",
+      "actual": "partially_modified",
+      "count": 5
+    },
+    {
+      "human": "unmodified",
+      "actual": "unmodified",
+      "count": 3
+    },
+    {
+      "human": "unmodified",
+      "actual": "undetermined",
+      "count": 1
+    },
+    {
+      "human": "undetermined",
+      "actual": "undetermined",
+      "count": 4
+    },
+    {
+      "human": "modified",
+      "actual": "undetermined",
+      "count": 3
+    }
+  ],
+  "rows": [
+    {
+      "issueId": "workflow-01",
+      "opinion": "把全文的“演示旧路维修工程”改为“演示新路维修工程”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "正文两处和页眉均改正，段落顺序改变。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 3,
+        "verifiedReplacements": 3,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-02",
+      "opinion": "把“项目经理”相关位置的“赵甲”改为“赵乙”。",
+      "truthStatus": "partially_modified",
+      "expectedConservativeDecision": "partially_modified",
+      "actualStatus": "partially_modified",
+      "authorNote": "正文改，人员表未改；人员表位置及行顺序改变。",
+      "reason": "有可核对的替换，同时新稿仍保留本意见范围内的旧值。",
+      "counts": {
+        "beforeOldOccurrences": 2,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-03",
+      "opinion": "把“施工总工期”相关位置的“30天”改为“45天”。",
+      "truthStatus": "unmodified",
+      "expectedConservativeDecision": "unmodified",
+      "actualStatus": "unmodified",
+      "authorNote": "实际仍为30天。",
+      "reason": "对应位置仍为旧值，没有发现可核对的替换。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-04",
+      "opinion": "把“夜间施工联系电话”相关位置的“13800000000”改为“13900000000”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "整段移动后号码改正。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-05",
+      "opinion": "把“投标联系人”相关位置的“周甲”改为“周乙”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "只在文本框内修改。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-06",
+      "opinion": "把“归档编号”相关位置的“备案旧号A01”改为“备案新号A02”。",
+      "truthStatus": "unmodified",
+      "expectedConservativeDecision": "unmodified",
+      "actualStatus": "unmodified",
+      "authorNote": "页脚保留原编号。",
+      "reason": "对应位置仍为旧值，没有发现可核对的替换。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-07",
+      "opinion": "把“质保承诺”相关位置的“12个月”改为“24个月”。",
+      "truthStatus": "unmodified",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "原段被删，未提供24个月承诺；原型不得凭旧值消失报已改。",
+      "reason": "部分位置或覆盖范围无法核对，不能把旧值未检出当作已经改全。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 1
+      }
+    },
+    {
+      "issueId": "workflow-08",
+      "opinion": "把“材料承诺”相关位置的“批次旧号”改为“批次新号”。",
+      "truthStatus": "partially_modified",
+      "expectedConservativeDecision": "partially_modified",
+      "actualStatus": "partially_modified",
+      "authorNote": "同一段落两处只改一处。",
+      "reason": "有可核对的替换，同时新稿仍保留本意见范围内的旧值。",
+      "counts": {
+        "beforeOldOccurrences": 2,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "workflow-09",
+      "opinion": "请补齐授权委托书并盖章。",
+      "truthStatus": "undetermined",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "无可校验盖章材料或可执行文本替换目标。",
+      "reason": "意见不属于本实验可验证的明确替换规则，需要人工解释或业务资料。",
+      "counts": null
+    },
+    {
+      "issueId": "workflow-10",
+      "opinion": "请优化整体施工方案。",
+      "truthStatus": "undetermined",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "意见缺乏可验证标准。",
+      "reason": "意见不属于本实验可验证的明确替换规则，需要人工解释或业务资料。",
+      "counts": null
+    },
+    {
+      "issueId": "ambiguity-01",
+      "opinion": "把“采购承诺”相关位置的“合同旧号”改为“合同新号”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "已改并新增同文副本，数量变化，原型保守拒绝唯一对应。",
+      "reason": "部分位置或覆盖范围无法核对，不能把旧值未检出当作已经改全。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 1
+      }
+    },
+    {
+      "issueId": "ambiguity-02",
+      "opinion": "把“运输方案”相关位置的“白天”改为“夜间”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "已改并拆成两个段落；原型未验证语义拆分。",
+      "reason": "部分位置或覆盖范围无法核对，不能把旧值未检出当作已经改全。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 1
+      }
+    },
+    {
+      "issueId": "ambiguity-03",
+      "opinion": "把全文的“旧编号甲”改为“新编号乙”。",
+      "truthStatus": "partially_modified",
+      "expectedConservativeDecision": "partially_modified",
+      "actualStatus": "partially_modified",
+      "authorNote": "原段改正，新增加的附件仍有旧号。",
+      "reason": "有可核对的替换，同时新稿仍保留本意见范围内的旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "ambiguity-04",
+      "opinion": "把“项目经理”相关位置的“赵甲”改为“赵乙”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "同名安全员未改，属于本意见范围以外。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "ambiguity-05",
+      "opinion": "把“重复声明”相关位置的“孙甲”改为“孙乙”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "两份相同声明均改，按组核对，不编造逐段血缘。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 2,
+        "verifiedReplacements": 2,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "ambiguity-06",
+      "opinion": "把“重复承诺”相关位置的“郑甲”改为“郑乙”。",
+      "truthStatus": "partially_modified",
+      "expectedConservativeDecision": "partially_modified",
+      "actualStatus": "partially_modified",
+      "authorNote": "两份相同承诺只改一份。",
+      "reason": "有可核对的替换，同时新稿仍保留本意见范围内的旧值。",
+      "counts": {
+        "beforeOldOccurrences": 2,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "coverage-01",
+      "opinion": "把全文的“模拟旧校区工程”改为“模拟新校区工程”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "正文和图片实际都改了，但本轮不联动OCR，全文覆盖不足。",
+      "reason": "部分位置或覆盖范围无法核对，不能把旧值未检出当作已经改全。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "coverage-02",
+      "opinion": "把正文可编辑文字的“模拟旧校区工程”改为“模拟新校区工程”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "意见明确限于可编辑正文，不承诺扫描图。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "coverage-03",
+      "opinion": "请核对扫描件中的证书编号是否已经更正。",
+      "truthStatus": "undetermined",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "缺乏指定旧值和目标新值，本轮不作OCR判断。",
+      "reason": "意见不属于本实验可验证的明确替换规则，需要人工解释或业务资料。",
+      "counts": null
+    },
+    {
+      "issueId": "coverage-04",
+      "opinion": "请确认施工方案满足夜间作业和交通导改要求。",
+      "truthStatus": "undetermined",
+      "expectedConservativeDecision": "undetermined",
+      "actualStatus": "undetermined",
+      "authorNote": "没有专业验收标准和招标条款。",
+      "reason": "意见不属于本实验可验证的明确替换规则，需要人工解释或业务资料。",
+      "counts": null
+    },
+    {
+      "issueId": "vocabulary-01",
+      "opinion": "把正文可编辑文字的“南桥修复工程”改为“东桥修复工程”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "改换词汇后仍能对应移动段落，页眉不在本意见范围。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "vocabulary-02",
+      "opinion": "把全文的“南桥修复工程”改为“东桥修复工程”。",
+      "truthStatus": "partially_modified",
+      "expectedConservativeDecision": "partially_modified",
+      "actualStatus": "partially_modified",
+      "authorNote": "正文已改但页眉未改。",
+      "reason": "有可核对的替换，同时新稿仍保留本意见范围内的旧值。",
+      "counts": {
+        "beforeOldOccurrences": 2,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "vocabulary-03",
+      "opinion": "把“技术负责人”相关位置的“陈一”改为“林二”。",
+      "truthStatus": "modified",
+      "expectedConservativeDecision": "modified",
+      "actualStatus": "modified",
+      "authorNote": "不同人名和岗位，表格行位置改变。",
+      "reason": "本实验范围内原有目标均有对应替换证据，且新稿未检出同范围旧值。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 1,
+        "afterOldOccurrences": 0,
+        "unresolvedGroups": 0
+      }
+    },
+    {
+      "issueId": "vocabulary-04",
+      "opinion": "把“维修工期”相关位置的“60天”改为“75天”。",
+      "truthStatus": "unmodified",
+      "expectedConservativeDecision": "unmodified",
+      "actualStatus": "unmodified",
+      "authorNote": "其他参考段有75天，实际工期段仍为60天。",
+      "reason": "对应位置仍为旧值，没有发现可核对的替换。",
+      "counts": {
+        "beforeOldOccurrences": 1,
+        "verifiedReplacements": 0,
+        "afterOldOccurrences": 1,
+        "unresolvedGroups": 0
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "workflow: full report evidence and source/opinion versions",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: before original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: before original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: after original evidence 5",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: after original evidence 6",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: partial includes proved new value and original old-value evidence",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: before original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "workflow-02: after original evidence 5",
+      "passed": true
+    },
+    {
+      "name": "workflow-03: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-03: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-03: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-03: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "workflow-04: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-04: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "workflow-04: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-04: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-05: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-05: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "workflow-05: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-05: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-06: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-06: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-06: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-06: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "workflow-07: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-07: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-07: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-08: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-08: partial includes proved new value and original old-value evidence",
+      "passed": true
+    },
+    {
+      "name": "workflow-08: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-08: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-08: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "workflow-09: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-09: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-09: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow-10: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "workflow-10: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "workflow-10: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "workflow: same before version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "workflow: same after version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "ambiguity: full report evidence and source/opinion versions",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: after original evidence 5",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-01: after original evidence 6",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-02: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-02: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-02: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-02: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-03: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-03: partial includes proved new value and original old-value evidence",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-03: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-03: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-03: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-04: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-04: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-04: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-04: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: before original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-05: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: partial includes proved new value and original old-value evidence",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: before original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "ambiguity-06: after original evidence 5",
+      "passed": true
+    },
+    {
+      "name": "ambiguity: same before version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "ambiguity: same after version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "coverage: full report evidence and source/opinion versions",
+      "passed": true
+    },
+    {
+      "name": "coverage-01: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "coverage-01: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "coverage-01: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "coverage-02: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "coverage-02: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "coverage-02: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "coverage-02: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "coverage-03: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "coverage-03: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "coverage-03: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "coverage-04: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "coverage-04: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "coverage-04: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "coverage: same before version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "coverage: same after version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "vocabulary: full report evidence and source/opinion versions",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-01: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-01: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-01: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-01: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: partial includes proved new value and original old-value evidence",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: before original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: after original evidence 4",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-02: after original evidence 5",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-03: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-03: complete has no remaining old value, unresolved group or coverage gap",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-03: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-03: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-04: pre-authored conservative decision",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-04: before original evidence 1",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-04: after original evidence 2",
+      "passed": true
+    },
+    {
+      "name": "vocabulary-04: after original evidence 3",
+      "passed": true
+    },
+    {
+      "name": "vocabulary: same before version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "vocabulary: same after version cannot count as a new modification",
+      "passed": true
+    },
+    {
+      "name": "Inserted table and reordered personnel rows do not pair by old coordinates",
+      "passed": true
+    },
+    {
+      "name": "Moved paragraph aligns despite different XML ordinal",
+      "passed": true
+    },
+    {
+      "name": "One paragraph containing two target occurrences remains partial",
+      "passed": true
+    },
+    {
+      "name": "Header and footer are actually covered in text review",
+      "passed": true
+    },
+    {
+      "name": "Textbox edit has actual textbox source evidence",
+      "passed": true
+    },
+    {
+      "name": "An old value introduced in a new appendix blocks completion",
+      "passed": true
+    },
+    {
+      "name": "Matching names in another role do not count as targeted residuals",
+      "passed": true
+    },
+    {
+      "name": "Identical duplicates reviewed as a set without invented lineage",
+      "passed": true
+    },
+    {
+      "name": "One-to-many and split paragraph edits abstain",
+      "passed": true
+    },
+    {
+      "name": "Image coverage is not silently converted into full-document completion",
+      "passed": true
+    },
+    {
+      "name": "Target new value appearing in an unrelated reference does not prove an edit",
+      "passed": true
+    },
+    {
+      "name": "Deletion cannot pass as successful replacement",
+      "passed": true
+    },
+    {
+      "name": "Unsupported editable body content is disclosed",
+      "passed": true
+    },
+    {
+      "name": "Unsupported body content prevents false completion",
+      "passed": true
+    },
+    {
+      "name": "Swapping old and new files invalidates report versions",
+      "passed": true
+    },
+    {
+      "name": "Editing the opinion list invalidates the old report",
+      "passed": true
+    },
+    {
+      "name": "workflow-01: before evidence cannot resolve against new version",
+      "passed": true
+    },
+    {
+      "name": "workflow-05: before evidence cannot resolve against new version",
+      "passed": true
+    },
+    {
+      "name": "workflow-06: before evidence cannot resolve against new version",
+      "passed": true
+    },
+    {
+      "name": "Fabricated before/after quote rejected",
+      "passed": true
+    },
+    {
+      "name": "Fabricated scan reference rejected",
+      "passed": true
+    },
+    {
+      "name": "No human-labeled incomplete or unknown issue marked complete",
+      "passed": true
+    }
+  ],
+  "method": "limited deterministic exact replacement rules; no model inference",
+  "businessIntegrated": false,
+  "realCustomerFilesVerified": false,
+  "naturalLanguageGeneralizationVerified": false,
+  "ocrIntegrated": false,
+  "wordLayoutRendered": false,
+  "versions": {
+    "workflow": {
+      "before": {
+        "sourceName": "workflow-before.docx",
+        "byteHash": "7cccc21754fdd41c5e16e6fbbab4db5b59fc09452368bbb7da98af953c551b0f"
+      },
+      "after": {
+        "sourceName": "workflow-after.docx",
+        "byteHash": "353381abac65dd929748c015dceaec158eb07ac15073deb32f071fafeae1f466"
+      },
+      "opinionHash": "11b39960d5691e162696bb06617d72003e6e1efd087a9abdccc041e9532680f0"
+    },
+    "ambiguity": {
+      "before": {
+        "sourceName": "ambiguity-before.docx",
+        "byteHash": "907355d1d7e356d86412b08a9f1627d88e027a145d40874f4643871d5cfb19f3"
+      },
+      "after": {
+        "sourceName": "ambiguity-after.docx",
+        "byteHash": "13f0bc3916e72ff5593ff163b4e32e67fcabdcee81788a06d004045c5e5cccd1"
+      },
+      "opinionHash": "b7fcb6be52e565d9e2f74f82c71fa0d6c2f59ee965e3a28a1e867d70b7aa197b"
+    },
+    "coverage": {
+      "before": {
+        "sourceName": "coverage-before.docx",
+        "byteHash": "20e9ac12d432279fe65910c5a212065665390f8295683f12a1ad86ecfeb2e183"
+      },
+      "after": {
+        "sourceName": "coverage-after.docx",
+        "byteHash": "6c7020268a9a78c657654d8565001ce1dc1190b2ed8ef2914913441dc70b3f09"
+      },
+      "opinionHash": "6b07ffc29f82d59bd5e6917d14892f41e4596e9a27ecd874d84295b9e6d647a7"
+    },
+    "vocabulary": {
+      "before": {
+        "sourceName": "vocabulary-before.docx",
+        "byteHash": "4bfa94eaaaf5a46664088fb6d5017288cd608d14e54590c9ea075c920abce663"
+      },
+      "after": {
+        "sourceName": "vocabulary-after.docx",
+        "byteHash": "8f546911b41613726113ec8610e959f9b1540a68fd669eaa1c9540922fbe0fc0"
+      },
+      "opinionHash": "90bc56564961900f75aaae22f07b6af80a9e0755028559ec4cd3e2cc4855c64c"
+    }
+  },
+  "wordRenderAttempt": {
+    "success": false,
+    "reason": "LibreOffice soffice.exe was not found on PATH"
+  },
+  "limitations": [
+    "no real customer files",
+    "no model inference",
+    "only explicit replacement grammar",
+    "no OCR integration",
+    "no split/merge semantic matching",
+    "no Word page or GUI navigation"
+  ]
+}

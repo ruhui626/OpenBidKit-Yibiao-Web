@@ -51,3 +51,7 @@ temp/
 Thumbs.db
 .idea/
 .vscode/settings.json
+
+# Python experiment caches
+__pycache__/
+*.py[cod]

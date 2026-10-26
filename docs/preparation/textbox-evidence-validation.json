@@ -1,0 +1,969 @@
+{
+  "synthetic": true,
+  "passed": 114,
+  "failed": 0,
+  "files": [
+    {
+      "sourceName": "textboxes-before.docx",
+      "sha256": "b9c3b9e6cfc63ff559dcf154ab6e864621021b9c2c407294d9dbd8e7c89cf746",
+      "textboxContainers": 12,
+      "nonemptyBlocks": 14,
+      "alternateGroups": 2
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "sha256": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+      "textboxContainers": 12,
+      "nonemptyBlocks": 14,
+      "alternateGroups": 2
+    },
+    {
+      "sourceName": "textboxes-edges.docx",
+      "sha256": "410bf6abc229bd33e62277ac96a7b7455a75679876dc994bf250ae2d1f5a5954",
+      "textboxContainers": 9,
+      "nonemptyBlocks": 8,
+      "alternateGroups": 1
+    }
+  ],
+  "totalBlocks": 36,
+  "totalTextboxContainers": 33,
+  "currentParser": [
+    {
+      "sourceName": "textboxes-before.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "parserLabel": "本地解析",
+      "exactTextboxParagraphsFound": [],
+      "exactTextboxParagraphsMissing": [
+        "兼容一致：演示旧路维修工程",
+        "兼容差异：演示旧路维修工程",
+        "同名重复文本",
+        "张三",
+        "旧格式文本框：演示旧路维修工程",
+        "框内姓名",
+        "正文文本框：演示旧路维修工程",
+        "正文浮动框：演示旧路维修工程",
+        "页眉框：演示旧路维修工程",
+        "页脚框：演示旧路维修工程",
+        "首页页眉框：演示旧路维修工程"
+      ],
+      "formattingNormalizedParagraphsFound": [
+        "兼容一致：演示旧路维修工程",
+        "兼容差异：演示旧路维修工程",
+        "旧格式文本框：演示旧路维修工程"
+      ],
+      "formattingNormalizedParagraphsMissing": [
+        "同名重复文本",
+        "张三",
+        "框内姓名",
+        "正文文本框：演示旧路维修工程",
+        "正文浮动框：演示旧路维修工程",
+        "页眉框：演示旧路维修工程",
+        "页脚框：演示旧路维修工程",
+        "首页页眉框：演示旧路维修工程"
+      ],
+      "sourceEvidenceReturned": false
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "parserLabel": "本地解析",
+      "exactTextboxParagraphsFound": [],
+      "exactTextboxParagraphsMissing": [
+        "兼容一致：演示新路维修工程",
+        "兼容差异：演示新路维修工程",
+        "兼容差异：演示旧路维修工程",
+        "同名重复文本",
+        "张三",
+        "旧格式文本框：演示旧路维修工程",
+        "框内姓名",
+        "正文文本框：演示新路维修工程",
+        "正文浮动框：演示旧路维修工程",
+        "页眉框：演示旧路维修工程",
+        "页脚框：演示旧路维修工程",
+        "首页页眉框：演示旧路维修工程"
+      ],
+      "formattingNormalizedParagraphsFound": [
+        "兼容一致：演示新路维修工程",
+        "兼容差异：演示旧路维修工程",
+        "旧格式文本框：演示旧路维修工程"
+      ],
+      "formattingNormalizedParagraphsMissing": [
+        "兼容差异：演示新路维修工程",
+        "同名重复文本",
+        "张三",
+        "框内姓名",
+        "正文文本框：演示新路维修工程",
+        "正文浮动框：演示旧路维修工程",
+        "页眉框：演示旧路维修工程",
+        "页脚框：演示旧路维修工程",
+        "首页页眉框：演示旧路维修工程"
+      ],
+      "sourceEvidenceReturned": false
+    },
+    {
+      "sourceName": "textboxes-edges.docx",
+      "ok": true,
+      "fields": [
+        "markdown",
+        "parserLabel",
+        "chars",
+        "hash",
+        "fallbackToLocal"
+      ],
+      "parserLabel": "本地解析",
+      "exactTextboxParagraphsFound": [],
+      "exactTextboxParagraphsMissing": [
+        "前缀😀 工程\t名称\n第二行",
+        "同名/同名",
+        "当前名称：新增名",
+        "新版候选名",
+        "旧版候选名",
+        "未知分支内容",
+        "隐藏名称待核对",
+        "页码缓存：9"
+      ],
+      "formattingNormalizedParagraphsFound": [
+        "旧版候选名"
+      ],
+      "formattingNormalizedParagraphsMissing": [
+        "前缀😀 工程\t名称\n第二行",
+        "同名/同名",
+        "当前名称：新增名",
+        "新版候选名",
+        "未知分支内容",
+        "隐藏名称待核对",
+        "页码缓存：9"
+      ],
+      "sourceEvidenceReturned": false
+    }
+  ],
+  "examples": [
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "c372e60dce33f038e7885ddf",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[4]/w:r[2]/w:drawing[1]/n1:anchor[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+          "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+          "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        },
+        "quote": "旧路",
+        "start": 8,
+        "end": 10,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "a16e66c805c79c47b78c6062",
+          "part": "word/document.xml",
+          "boxXPath": "/w:document[1]/w:body[1]/w:p[4]/w:r[2]/w:drawing[1]/n1:anchor[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+            "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+            "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+          },
+          "representation": "drawingml",
+          "shapeId": null,
+          "drawingId": "2",
+          "storyId": "2",
+          "anchorXPath": "/w:document[1]/w:body[1]/w:p[4]",
+          "anchorTablePath": [],
+          "alternateContexts": [],
+          "uses": [],
+          "flags": []
+        }
+      },
+      "visibility": "stored-content-only"
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "060b7ff273495a97c56714ee",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[5]/w:r[2]/w:pict[1]/n1:shape[1]/n1:textbox[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "urn:schemas-microsoft-com:vml"
+        },
+        "quote": "旧路",
+        "start": 9,
+        "end": 11,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "481659e63d1ff48cf6f9b789",
+          "part": "word/document.xml",
+          "boxXPath": "/w:document[1]/w:body[1]/w:p[5]/w:r[2]/w:pict[1]/n1:shape[1]/n1:textbox[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "urn:schemas-microsoft-com:vml"
+          },
+          "representation": "vml",
+          "shapeId": "OfflineVML3",
+          "drawingId": null,
+          "storyId": null,
+          "anchorXPath": "/w:document[1]/w:body[1]/w:p[5]",
+          "anchorTablePath": [],
+          "alternateContexts": [],
+          "uses": [],
+          "flags": []
+        }
+      },
+      "visibility": "stored-content-only"
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "65875e796b2fcbdc64d951ea",
+        "part": "word/document.xml",
+        "xpath": "/w:document[1]/w:body[1]/w:p[8]/w:r[2]/n1:AlternateContent[1]/n1:Fallback[1]/w:pict[1]/n2:shape[1]/n2:textbox[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+          "n2": "urn:schemas-microsoft-com:vml"
+        },
+        "quote": "旧路",
+        "start": 7,
+        "end": 9,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "62df1c3d740ed62cac04cc82",
+          "part": "word/document.xml",
+          "boxXPath": "/w:document[1]/w:body[1]/w:p[8]/w:r[2]/n1:AlternateContent[1]/n1:Fallback[1]/w:pict[1]/n2:shape[1]/n2:textbox[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+            "n2": "urn:schemas-microsoft-com:vml"
+          },
+          "representation": "vml",
+          "shapeId": "OfflineVML9",
+          "drawingId": null,
+          "storyId": null,
+          "anchorXPath": "/w:document[1]/w:body[1]/w:p[8]",
+          "anchorTablePath": [],
+          "alternateContexts": [
+            {
+              "groupXPath": "/w:document[1]/w:body[1]/w:p[8]/w:r[2]/n1:AlternateContent[1]",
+              "branchXPath": "/w:document[1]/w:body[1]/w:p[8]/w:r[2]/n1:AlternateContent[1]/n1:Fallback[1]",
+              "branch": "Fallback",
+              "requires": []
+            }
+          ],
+          "uses": [],
+          "flags": [
+            "compatibility_branch_not_render_verified"
+          ]
+        }
+      },
+      "visibility": "stored-content-only"
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "ecf458716df5ee04e89f8b1f",
+        "part": "word/header1.xml",
+        "xpath": "/w:hdr[1]/w:p[1]/w:r[1]/w:drawing[1]/n1:inline[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+          "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+          "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        },
+        "quote": "旧路",
+        "start": 6,
+        "end": 8,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "b3a6d4c6b85cde05312844e6",
+          "part": "word/header1.xml",
+          "boxXPath": "/w:hdr[1]/w:p[1]/w:r[1]/w:drawing[1]/n1:inline[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+            "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+            "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+          },
+          "representation": "drawingml",
+          "shapeId": null,
+          "drawingId": "10",
+          "storyId": "10",
+          "anchorXPath": "/w:hdr[1]/w:p[1]",
+          "anchorTablePath": [],
+          "alternateContexts": [],
+          "uses": [
+            {
+              "section": 1,
+              "kind": "header",
+              "variant": "default",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/header1.xml",
+              "relationshipId": "rId9",
+              "definedInSection": 1,
+              "inherited": false,
+              "blank": false
+            },
+            {
+              "section": 2,
+              "kind": "header",
+              "variant": "default",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/header1.xml",
+              "relationshipId": "rId9",
+              "definedInSection": 1,
+              "inherited": true,
+              "blank": false
+            }
+          ],
+          "flags": []
+        }
+      },
+      "visibility": "stored-content-only"
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "abd134b2177c070f5ce53c0a",
+        "part": "word/header2.xml",
+        "xpath": "/w:hdr[1]/w:p[1]/w:r[1]/w:drawing[1]/n1:inline[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+          "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+          "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+        },
+        "quote": "旧路",
+        "start": 8,
+        "end": 10,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "0aa2f2acf0a0b3fda5a217ef",
+          "part": "word/header2.xml",
+          "boxXPath": "/w:hdr[1]/w:p[1]/w:r[1]/w:drawing[1]/n1:inline[1]/n2:graphic[1]/n2:graphicData[1]/n3:wsp[1]/n3:txbx[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+            "n2": "http://schemas.openxmlformats.org/drawingml/2006/main",
+            "n3": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+          },
+          "representation": "drawingml",
+          "shapeId": null,
+          "drawingId": "12",
+          "storyId": "12",
+          "anchorXPath": "/w:hdr[1]/w:p[1]",
+          "anchorTablePath": [],
+          "alternateContexts": [],
+          "uses": [
+            {
+              "section": 1,
+              "kind": "header",
+              "variant": "first",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/header2.xml",
+              "relationshipId": "rId11",
+              "definedInSection": 1,
+              "inherited": false,
+              "blank": false
+            },
+            {
+              "section": 2,
+              "kind": "header",
+              "variant": "first",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/header2.xml",
+              "relationshipId": "rId11",
+              "definedInSection": 1,
+              "inherited": true,
+              "blank": false
+            }
+          ],
+          "flags": []
+        }
+      },
+      "visibility": "stored-content-only"
+    },
+    {
+      "sourceName": "textboxes-after.docx",
+      "evidence": {
+        "sourceByteHash": "fcf20be13401530a422f28819e6b23340bed6af12e4904f237d027f2c643a2dc",
+        "blockId": "59a45c94fe77e11a38104366",
+        "part": "word/footer1.xml",
+        "xpath": "/w:ftr[1]/w:p[1]/w:r[1]/w:pict[1]/n1:shape[1]/n1:textbox[1]/w:txbxContent[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+          "n1": "urn:schemas-microsoft-com:vml"
+        },
+        "quote": "旧路",
+        "start": 6,
+        "end": 8,
+        "offsetUnit": "unicode-code-point",
+        "textbox": {
+          "boxId": "14fb70239ec9b2b8babd9bd5",
+          "part": "word/footer1.xml",
+          "boxXPath": "/w:ftr[1]/w:p[1]/w:r[1]/w:pict[1]/n1:shape[1]/n1:textbox[1]/w:txbxContent[1]",
+          "namespaces": {
+            "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "n1": "urn:schemas-microsoft-com:vml"
+          },
+          "representation": "vml",
+          "shapeId": "OfflineVML11",
+          "drawingId": null,
+          "storyId": null,
+          "anchorXPath": "/w:ftr[1]/w:p[1]",
+          "anchorTablePath": [],
+          "alternateContexts": [],
+          "uses": [
+            {
+              "section": 1,
+              "kind": "footer",
+              "variant": "default",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/footer1.xml",
+              "relationshipId": "rId10",
+              "definedInSection": 1,
+              "inherited": false,
+              "blank": false
+            },
+            {
+              "section": 2,
+              "kind": "footer",
+              "variant": "default",
+              "enabledBySettings": true,
+              "titlePageDifferent": true,
+              "evenAndOddDifferent": false,
+              "pageNumberStartSetting": null,
+              "part": "word/footer1.xml",
+              "relationshipId": "rId10",
+              "definedInSection": 1,
+              "inherited": true,
+              "blank": false
+            }
+          ],
+          "flags": []
+        }
+      },
+      "visibility": "stored-content-only"
+    }
+  ],
+  "checks": [
+    {
+      "name": "textboxes-before.docx: authored textbox count including empty",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored nonempty paragraph count",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: alternative copy comparisons",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: unused header excluded and disclosed",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: distinct IDs and exact source hash",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 1",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 2",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 3",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 4",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 5",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 6",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 7",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 8",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 9",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 10",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 11",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 12",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 13",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: authored content 14",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 1ff25475470098a2806618b1",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 2f24589c3998dc9d8b6954cc",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 88584c72a84c32abe3f5759d",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip acefe820ee502af91fb925f5",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 475a03f8498ab1539919667c",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 28088ffbf3ecbd8d7fed697b",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 358d77d365809f32eeb076cb",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip e740150a4a71f7dc7209bbe9",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip f66a901bd67db4160e7a808b",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip ffe0a100ed335f18fd3c23b7",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip f52eb43e8f164ebeb2af5c3f",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip fdbc1291923e1a0b1080fec2",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip b31a7c019a11a131a3298a23",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source roundtrip 584af83095361e65f32afbfa",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: original indexes do not merge textbox text into anchor paragraphs",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: source unchanged after extraction",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored textbox count including empty",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored nonempty paragraph count",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: alternative copy comparisons",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: unused header excluded and disclosed",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: distinct IDs and exact source hash",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 1",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 2",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 3",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 4",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 5",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 6",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 7",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 8",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 9",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 10",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 11",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 12",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 13",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: authored content 14",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip a4232827c5d9f0f24d7ff34e",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 80bd38e2784c59b69e1ca539",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip c372e60dce33f038e7885ddf",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 060b7ff273495a97c56714ee",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 38d25fea8b0d53512d438d93",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip b4e0433a444657b75a8faf5e",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip ca0a8a4a65afa7c427e934da",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 221f6eeaf2ee853ba65fbfc0",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 0b44517f81d256d52db9e587",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 3e5af4c160b15bae15ae79ab",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 65875e796b2fcbdc64d951ea",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip ecf458716df5ee04e89f8b1f",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip abd134b2177c070f5ce53c0a",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source roundtrip 59a45c94fe77e11a38104366",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: original indexes do not merge textbox text into anchor paragraphs",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: source unchanged after extraction",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored textbox count including empty",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored nonempty paragraph count",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: alternative copy comparisons",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: unused header excluded and disclosed",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: distinct IDs and exact source hash",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 1",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 2",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 3",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 4",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 5",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 6",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 7",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: authored content 8",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip 8e3183e710f61cc2cb516240",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip 0d146ce1605283186277ed4a",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip dad1e14a8705eb3645f8a0ce",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip 15ea13b93d891aa6f857df49",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip 268d24b9e2b962fe75296de9",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip a3ec576b298b951676f5fb76",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip de4e8e420ba525e056a1f74e",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source roundtrip f1b9b3d969de6b22fb8755e9",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: original indexes do not merge textbox text into anchor paragraphs",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: source unchanged after extraction",
+      "passed": true
+    },
+    {
+      "name": "Changing returned evidence cannot mutate the extracted index",
+      "passed": true
+    },
+    {
+      "name": "Evidence bound to exact original version",
+      "passed": true
+    },
+    {
+      "name": "Fabricated quote rejected",
+      "passed": true
+    },
+    {
+      "name": "Fabricated textbox context rejected",
+      "passed": true
+    },
+    {
+      "name": "Fabricated namespace mapping rejected",
+      "passed": true
+    },
+    {
+      "name": "Boolean offset rejected",
+      "passed": true
+    },
+    {
+      "name": "Body paragraph cannot impersonate textbox evidence",
+      "passed": true
+    },
+    {
+      "name": "Same text in separate boxes stays distinct",
+      "passed": true
+    },
+    {
+      "name": "Compatibility copy cannot inherit another box context",
+      "passed": true
+    },
+    {
+      "name": "Forged header section context rejected",
+      "passed": true
+    },
+    {
+      "name": "Inherited header physical textbox extracted once with two section uses",
+      "passed": true
+    },
+    {
+      "name": "Unicode code-point offset and tab/newline extraction",
+      "passed": true
+    },
+    {
+      "name": "Repeated quote within a paragraph requires disambiguation",
+      "passed": true
+    },
+    {
+      "name": "Unused header cannot impersonate used textbox",
+      "passed": true
+    },
+    {
+      "name": "Linked textbox and non-container drawing text disclosed",
+      "passed": true
+    },
+    {
+      "name": "Empty textbox recorded but not invented as text",
+      "passed": true
+    },
+    {
+      "name": "Changed body still leaves textbox evidence",
+      "passed": true
+    },
+    {
+      "name": "Current parser comparison completed for all fixtures",
+      "passed": true
+    },
+    {
+      "name": "textboxes-before.docx: file unchanged after current parser",
+      "passed": true
+    },
+    {
+      "name": "textboxes-after.docx: file unchanged after current parser",
+      "passed": true
+    },
+    {
+      "name": "textboxes-edges.docx: file unchanged after current parser",
+      "passed": true
+    }
+  ],
+  "businessIntegrated": false,
+  "paidModelCalls": false,
+  "renderVerified": false,
+  "pageNumbersVerified": false,
+  "customerFilesVerified": false,
+  "displayedBranchesVerified": false,
+  "regression": {
+    "body": {
+      "passed": 160,
+      "failed": 0
+    },
+    "headerFooter": {
+      "passed": 154,
+      "failed": 0
+    }
+  },
+  "renderAttempt": {
+    "success": false,
+    "error": "LibreOffice soffice.exe was not found on PATH",
+    "installedSoftware": false,
+    "guiNavigationVerified": false
+  },
+  "fixtureKind": "python-docx plus hand-authored OOXML test structures; no schema or visual acceptance",
+  "references": [
+    "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.textboxcontent?view=openxml-3.0.1",
+    "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.vml.textbox?view=openxml-3.0.1",
+    "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.alternatecontentchoice?view=openxml-3.0.1",
+    "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.office2010.word.drawingshape.textboxinfo2?view=openxml-3.0.1"
+  ]
+}

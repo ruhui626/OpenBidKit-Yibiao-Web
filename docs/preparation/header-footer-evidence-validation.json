@@ -1,0 +1,173 @@
+{
+  "synthetic": true,
+  "passed": 154,
+  "failed": 0,
+  "fixtureCount": 3,
+  "blockCounts": {
+    "headers-before.docx": 21,
+    "headers-after.docx": 21,
+    "headers-switches.docx": 10
+  },
+  "originalPartRoundTrips": 52,
+  "sectionBindings": 48,
+  "authoredExpectations": 27,
+  "sourceHashes": {
+    "headers-before.docx": "26a6d311595fe9524c2da2c8f2b7e869ebcd6984566843c76f7a8afec1b9a330",
+    "headers-after.docx": "6a924d87d994e61c0a084e8418ae5ee710fdaf82c62b5fac1f90cd79aed692ae",
+    "headers-switches.docx": "45ec1daba06a9555dbed52d85a003da9fe3e0281b5055e1493bfc69e929f51e7"
+  },
+  "currentParser": [
+    {
+      "sourceName": "headers-before.docx",
+      "ok": true,
+      "hasLocators": false,
+      "headerMarkerFound": false,
+      "footerMarkerFound": false
+    },
+    {
+      "sourceName": "headers-after.docx",
+      "ok": true,
+      "hasLocators": false,
+      "headerMarkerFound": false,
+      "footerMarkerFound": false
+    },
+    {
+      "sourceName": "headers-switches.docx",
+      "ok": true,
+      "hasLocators": false,
+      "headerMarkerFound": false,
+      "footerMarkerFound": false
+    }
+  ],
+  "currentParserProcessExit": 0,
+  "examples": [
+    {
+      "label": "正文已改但该处仍留旧项目名",
+      "sourceName": "headers-after.docx",
+      "evidence": {
+        "sourceByteHash": "6a924d87d994e61c0a084e8418ae5ee710fdaf82c62b5fac1f90cd79aed692ae",
+        "blockId": "baae57d06aa9445a8bf662a9",
+        "part": "word/header2.xml",
+        "xpath": "/w:hdr[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "页眉首页：演示旧路维修工程",
+        "start": 0,
+        "end": 13,
+        "offsetUnit": "unicode-code-point",
+        "uses": [
+          {
+            "section": 1,
+            "kind": "header",
+            "variant": "first",
+            "enabledBySettings": true,
+            "titlePageDifferent": true,
+            "evenAndOddDifferent": true,
+            "pageNumberStartSetting": null,
+            "part": "word/header2.xml",
+            "relationshipId": "rId10",
+            "definedInSection": 1,
+            "inherited": false,
+            "blank": false
+          },
+          {
+            "section": 2,
+            "kind": "header",
+            "variant": "first",
+            "enabledBySettings": false,
+            "titlePageDifferent": false,
+            "evenAndOddDifferent": true,
+            "pageNumberStartSetting": "2",
+            "part": "word/header2.xml",
+            "relationshipId": "rId10",
+            "definedInSection": 1,
+            "inherited": true,
+            "blank": false
+          }
+        ]
+      },
+      "tablePath": []
+    },
+    {
+      "label": "正文已改但该处仍留旧项目名",
+      "sourceName": "headers-after.docx",
+      "evidence": {
+        "sourceByteHash": "6a924d87d994e61c0a084e8418ae5ee710fdaf82c62b5fac1f90cd79aed692ae",
+        "blockId": "d19c70c0a0bee87c70389019",
+        "part": "word/footer1.xml",
+        "xpath": "/w:ftr[1]/w:p[1]",
+        "namespaces": {
+          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        },
+        "quote": "页脚默认：演示旧路维修工程",
+        "start": 0,
+        "end": 13,
+        "offsetUnit": "unicode-code-point",
+        "uses": [
+          {
+            "section": 1,
+            "kind": "footer",
+            "variant": "default",
+            "enabledBySettings": true,
+            "titlePageDifferent": true,
+            "evenAndOddDifferent": true,
+            "pageNumberStartSetting": null,
+            "part": "word/footer1.xml",
+            "relationshipId": "rId12",
+            "definedInSection": 1,
+            "inherited": false,
+            "blank": false
+          },
+          {
+            "section": 2,
+            "kind": "footer",
+            "variant": "default",
+            "enabledBySettings": true,
+            "titlePageDifferent": false,
+            "evenAndOddDifferent": true,
+            "pageNumberStartSetting": "2",
+            "part": "word/footer1.xml",
+            "relationshipId": "rId12",
+            "definedInSection": 1,
+            "inherited": true,
+            "blank": false
+          },
+          {
+            "section": 3,
+            "kind": "footer",
+            "variant": "default",
+            "enabledBySettings": true,
+            "titlePageDifferent": true,
+            "evenAndOddDifferent": true,
+            "pageNumberStartSetting": null,
+            "part": "word/footer1.xml",
+            "relationshipId": "rId12",
+            "definedInSection": 1,
+            "inherited": true,
+            "blank": false
+          }
+        ]
+      },
+      "tablePath": []
+    }
+  ],
+  "renderVerified": false,
+  "pageNumbersVerified": false,
+  "customerFilesVerified": false,
+  "businessIntegrated": false,
+  "checkedAt": "2026-10-24T23:01:23.785997+08:00",
+  "bodyRegression": {
+    "passed": 160,
+    "failed": 0,
+    "originalLocatorRoundTrips": 73
+  },
+  "rendererFailure": "LibreOffice soffice.exe was not found on PATH; no page images produced.",
+  "paidModelCalls": false,
+  "referenceSources": {
+    "headerInheritance": "https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oi29500/5de15e59-3ec1-4f80-aa4d-00bdd447b86f",
+    "firstPageInheritance": "https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oi29500/bce5f993-d683-4aa7-825e-bce25c64e8b8",
+    "evenAndOdd": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.wordprocessing.evenandoddheaders"
+  },
+  "scope": "Linked header/footer part text and table paragraphs, section definitions and settings. Not page layout, Word/WPS GUI navigation or a production feature."
+}
